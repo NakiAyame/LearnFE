@@ -161,6 +161,16 @@ button{
     transition: all .3s ease-in-out;
 }
 
+.title p{
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+    color: #444;
+    transition: all .3s ease;
+}
+
 .title button{
     margin-top: 40px;
     padding: 8px 20px;
@@ -513,6 +523,273 @@ button{
     margin-bottom: 40px;
 }
 
-.right-menu .active{
+.right-menu.active{
     right: 0;
+}
+
+/* Tuỳ chỉnh trên các thiết bị khác */
+@media (max-width:1245px){
+    .img-footer{
+        width: 370px;
+        left: 0;
+    }
+
+    .title h1{
+        max-width: 450px;
+        font-size: 45px;
+    }
+
+    .title p{
+        max-width: 370px;
+    }
+
+    .wapper-one h1{
+        font-size: 30px;
+    }
+
+    .wapper-title h1, .four-right-side h1, .wapper-three h1{
+        max-width: 350px;
+        font-size: 42px;
+    }
+
+    .four-right-side h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1150px){
+    .title-img-box{
+        max-width: 400px;
+        height: 350px;
+    }
+
+    .title-img{
+        max-width: 350px;
+    }
+
+    .wapper-title, .wapper-two-info{
+        margin-right: 50px;
+    }
+
+    .wapper-one{
+        flex-direction: column;
+    }
+
+    .wapper-one h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .wapper-two{
+        justify-content: space-between;
+    }
+
+    .wapper-title{
+        margin-left: 50px;
+    }
+
+    .four-right-side{
+        align-items: center;
+        margin-top: 40px;
+        max-width: 400px;
+    }
+
+    .four-right-side li{
+        margin-top: 15px;
+        text-align: left;
+        margin-left: 20px;
+        max-width: 370px;
+    }
+
+    .wapper-four{
+        padding: 20px;
+    }
+}
+
+@media (max-width:900px){
+    .right-menu{
+        position: fixed;
+        width: 270px;
+        background-color: #f2fdfe;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        align-items: center;
+        right: -1000px;
+    }
+
+    .right-menu ul{
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        position: relative;
+    }
+
+    .right-menu ul li {
+        margin-bottom: 30px;
+    }
+
+    .right-menu ul li a{
+        margin: 0;
+    }
+
+    .show-header, .close{
+        display: flex;
+    }
+
+    .left-menu img{
+        position: fixed;
+        top: 0;
+        left: 10px;
+        z-index: 100;
+    }
+
+    .title-section{
+        margin: 0;
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title-img-box{
+        max-width: 390px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .title-img{
+        max-width: 300px;
+        right: 40px;
+    }
+
+    .title{
+        align-items: center;
+    }
+
+    .title h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 55px;
+        max-width: 450px;
+    }
+
+    .title p{
+        text-align: center;
+    }
+
+    .wapper-one-data{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wapper-info h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .wapper-title h1, .wapper-three h1, .wapper-five h1{
+        font-size: 35px;
+    }
+
+    .wapper-title button{
+        margin-top: 30px;
+    }
+
+    .wapper-two{
+        border-radius: 50px;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .wapper-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .wapper-title h1{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .wapper-two-info{
+        margin: 0;
+        align-items: center;
+    }
+
+    .two-info{
+        display: flex;
+        margin: 0;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .two-info h1{
+        text-align: center;
+    }
+
+    .two-info p{
+        text-align: center;
+    }
+
+    .wapper-three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wapper-three h1{
+        text-align: center;
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+
+    .wapper-three-info{
+        margin-top: 30px;
+    }
+
+    .wapper-four{
+        border-radius: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 500px;
+        height: auto;
+        margin-top: 170px;
+    }
+
+    .img-footer{
+        position: relative;
+    }  
+}
+
+@media (max-width:900px){
+    .wapper-three{
+        margin-bottom: 20px;
+    }
+}
+
+/* Tuỳ chỉnh hiệu ứng animation */
+@keyframes show {
+    0%{
+        opacity: 0;
+        scale: .9;
+    }
 }
